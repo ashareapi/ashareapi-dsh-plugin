@@ -1,0 +1,17 @@
+# 更新记录
+
+> **工具本身永远是最新的** —— 24 个工具由服务端提供（<https://api.ashareapi.com/mcp>），  
+> 新增字段、新增工具**都不需要重新安装本插件**。只有插件的**接入方式**变化时才会发新版本。  
+> 完整更新日志：<https://ashareapi.com/changelog>
+
+
+
+---
+
+## 2026-10-01
+
+- 首次发布：DeepSeek Harness **桌面端 / Web UI** 装完即用 **24 个 A股工具**（行情 / K线 / 五档盘口 / 财务 / 资金 / 龙虎榜 / 板块 / 可转债 / 因子选股 / 宏观），**免费工具无需 Key**
+- 桌面端 / Web UI：在「插件」页面输入包名 `ashareapi-dsh-plugin` 即可安装
+- 匿名也能用：不填 Key 时不会发送鉴权头，5 个免费工具照常可用
+- 工具命名空间固定为 `ashareapi`，工具名形如 `mcp__ashareapi__ashare_quote`
+- 可选配置：`apiKey` / `url` / `serverName` / `headers`，其余字段透传给 DSH 自带的 MCP 客户端

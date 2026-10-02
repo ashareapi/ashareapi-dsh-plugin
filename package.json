@@ -1,0 +1,63 @@
+{
+  "name": "ashareapi-dsh-plugin",
+  "version": "0.1.0",
+  "description": "A股数据 API 官方 DeepSeek Harness 插件 —— 桌面端 / Web UI 输个包名即装，24 个 A股工具（行情 / K线 / 财务 / 资金 / 龙虎榜 / 板块 / 因子选股），免费工具无需 Key",
+  "type": "module",
+  "main": "index.js",
+  "exports": {
+    ".": "./index.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.js",
+    "test.js",
+    "cordis.patch.yml",
+    "icon.png",
+    "README.md",
+    "README.en.md",
+    "CHANGELOG.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "test": "node --test"
+  },
+  "icon": "icon.png",
+  "dsh": {
+    "manifestVersion": 1,
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "engines": {
+    "node": ">=20",
+    "dsh": ">=0.2.0-rc.2"
+  },
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek",
+    "deepseek-harness",
+    "plugin",
+    "mcp",
+    "a-share",
+    "ashare",
+    "stock-data",
+    "stock-api",
+    "china-stock-market",
+    "financial-data",
+    "quant",
+    "finance",
+    "行情",
+    "股票",
+    "财务"
+  ],
+  "homepage": "https://ashareapi.com",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ashareapi/ashareapi-dsh-plugin.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ashareapi/ashareapi-dsh-plugin/issues"
+  },
+  "license": "MIT"
+}
