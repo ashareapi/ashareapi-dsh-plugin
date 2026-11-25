@@ -1,7 +1,7 @@
 {
   "name": "ashareapi-dsh-plugin",
-  "version": "0.1.3",
-  "description": "A股数据 API 官方 DeepSeek Harness 插件 —— 桌面端 / Web UI 输个包名即装，31 个 A股工具（行情 / K线 / 分时 / 财务 / 资金 / 龙虎榜 / 板块 / 因子选股 / 量化回测），免费工具无需 Key",
+  "version": "0.1.5",
+  "description": "A股数据 API 官方 DeepSeek Harness 插件 —— 桌面端 / Web UI 输个包名即装，94 个 A股工具（行情 / K线 / 分时 / 五档盘口 / L2 大单 / 财务 / 资金 / 龙虎榜 / 板块 / 因子选股 / 量化回测 / 短线打板 / 集合竞价 / 期货外汇 / 宏观 / 自选列表 / 资讯公告），免费工具无需 Key",
   "type": "module",
   "main": "index.js",
   "exports": {
@@ -10,7 +10,6 @@
   },
   "files": [
     "index.js",
-    "test.js",
     "cordis.patch.yml",
     "icon.png",
     "README.md",

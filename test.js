@@ -81,7 +81,7 @@ test('自定义 headers 与 Authorization 合并', () => {
   assert.deepEqual(cfg.headers, { 'X-Trace': '1', Authorization: 'Bearer ct-x' })
 })
 
-test('其余字段原样透传给 mcp-client', () => {
+test('其余字段交给 mcp-client 处理', () => {
   const cfg = buildMcpConfig({ toolCallTimeoutMs: 30000, failOnStartupError: true }, {})
   assert.equal(cfg.toolCallTimeoutMs, 30000)
   assert.equal(cfg.failOnStartupError, true)
@@ -122,7 +122,7 @@ test('typoHints：识别 apiKey 的常见拼写变体', () => {
   }
 })
 
-test('typoHints：合法配置与透传字段不产生噪音', () => {
+test('typoHints：合法配置与自定义字段不产生噪音', () => {
   assert.deepEqual(typoHints({ apiKey: 'ct-1', url: DEFAULT_URL, serverName: 'ashareapi' }), [])
   assert.deepEqual(typoHints({ toolCallTimeoutMs: 1000, failOnStartupError: true }), [])
   assert.deepEqual(typoHints(), [])
